@@ -3,222 +3,203 @@ body{
   padding: 0px;
   margin: 0px;
   font-size: 10px;
-  height: auto;
+  font-family: 'Arial';
 }
 
+a{
+  text-decoration: none;
+}
 .container{
-  width: 50%;
+  width: 700px;
   height: auto;
-  margin-left: 25%;
+  margin-left: auto;
+  margin-right: auto;  
   margin-top: 3%;
   background-color: white;
   border-radius: 10px;
+  line-height: 2.4em;
 }
 
 .container div{
-  margin-left: 3%;
+  margin-left: 7%;
+  margin-right: 7%;
 }
 
 .header_img{
-  width: 100%;
-  border-radius: 5px;
+  height: 201px;
+  background-image: url("../images/英特尔认证头图700.jpg");
+  border-radius: 10px;
 }
-.header_img img{
-  width: 100%;
-  border-radius: 5px;
-  height: 30em;
-}
-
 
 .p_text{
-  font-size: 1.6em;
+  font-size: 2.1em;
+  margin-top: 5%;
 }
 
 .p_footer{
-  font-size: 1em;
-  margin-top: 10em;
-  height:7em;
+  font-size: 1.6em;
+  margin-top: 12%;
+  line-height: 1.5em;
+  height: 5em;
 }
 
 .a_a{
   width: 200px;
-  height: 100px;
+  margin-top: 4%;
 }
 
-.a_a a.button {
-      position: relative;
-      color: rgba(255,255,255,1);
-      text-decoration: none;
-      background-color: rgba(46,94,219,1);
-      font-family: 'Yanone Kaffeesatz';
-      font-weight: 700;
-      font-size: 1.7em;
-      display: block;
-      padding: 4px;
-      -webkit-border-radius: 8px;
-      -moz-border-radius: 8px;
-      border-radius: 8px;
-      -webkit-box-shadow: 0px 9px 0px rgba(46,50,200,1), 0px 9px 25px rgba(0,0,0,.7);
-      -moz-box-shadow: 0px 9px 0px rgba(46,50,200,1), 0px 9px 25px rgba(0,0,0,.7);
-      box-shadow: 0px 9px 0px rgba(46,50,200,1), 0px 9px 25px rgba(0,0,0,.7);
-      width: 160px;
-      text-align: center;
-      margin-top: 2em;      
-      -webkit-transition: all .1s ease;
-      -moz-transition: all .1s ease;
-      -ms-transition: all .1s ease;
-      -o-transition: all .1s ease;
-      transition: all .1s ease;
-    }
-
-.a_a a.button:active {
-      -webkit-box-shadow: 0px 3px 0px rgba(46,50,200,1), 0px 3px 6px rgba(0,0,0,.9);
-      -moz-box-shadow: 0px 3px 0px rgba(46,50,200,1), 0px 3px 6px rgba(0,0,0,.9);
-      box-shadow: 0px 3px 0px rgba(46,50,200,1), 0px 3px 6px rgba(0,0,0,.9);
-      position: relative;
-      top: 5px;
-    }
+.btn-style-01{
+  border-style:none;
+  padding:7px 20px;
+  line-height:25px;
+  color:#fff;
+  cursor:pointer;
+  border:1px #2e5edb solid;
+  -webkit-box-shadow:inset 0px 0px 1px #fff;
+  -moz-box-shadow:inset 0px 0px 1px #fff;
+  box-shadow:inset 0px 0px 1px #fff;/*内发光效果*/
+  -webkit-border-radius:4px;
+  -moz-border-radius:4px;
+  border-radius:4px;/*边框圆角*/
+  font-size: 2em;
+  background-color:#2e5edb;
+  background-image: -webkit-gradient(linear, 0 0%, 0 100%, from(#2e5edb), to(#2454d3));
+  background-image: -webkit-linear-gradient(top, #2e5edb 0%, #2454d3 100%);
+  background-image: -moz-linear-gradient(top, #2e5edb 0%, #2454d3 100%);
+  background-image: -ms-linear-gradient(top, #2e5edb 0%, #2454d3 100%);
+  background-image: -o-linear-gradient(top, #2e5edb 0%, #2454d3 100%);
+  background-image: linear-gradient(top, #2e5edb 0%, #2454d3 100%);/*颜色渐变效果*/
+}
+.btn-style-01:hover {
+  background-color:#2454d3;
+  background-image: -webkit-gradient(linear, 0 0%, 0 100%, from(#2454d3), to(#2e5edb));
+  background-image: -webkit-linear-gradient(top, #2454d3 0%, #2e5edb 100%);
+  background-image: -moz-linear-gradient(top, #2454d3 0%, #2e5edb 100%);
+  background-image: -ms-linear-gradient(top, #2454d3 0%, #2e5edb 100%);
+  background-image: -o-linear-gradient(top, #2454d3 0%, #2e5edb 100%);
+  background-image: linear-gradient(top, #2454d3 0%, #2e5edb 100%);
+}
 
 footer{
   width: 100%;
   text-align: center;
-  margin-top: 4em;
+  margin-top: 1.5%;
 }
 
 footer p{
   text-align: center;
   color:#999999;
+  font-size: 1.3em;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 700px) {
 
   .container{
-    width: 70%;
+    width:600px;
     height: auto;
-    margin-left: 15%;
-    margin-top: 3%;
-    background-color: white;
-    border-radius: 10px;
-  }
-
-  .header_img img{
-    width: 100%;
-    border-radius: 5px;
-    height: 25em;
-  }
-
-
-  .p_text{
-    font-size: 1.4em;
-  }
-
-  footer{
-    margin-top: 2em;
-  }
-}
-
-@media screen and (max-width: 768px) {
-
-  .container{
-    width: 70%;
-    margin-left: 15%;
-    margin-top: 10%;
-    background-color: white;
-    border-radius: 10px;
-  }
-
-
-  .p_text{
-    font-size: 1.4em;
   }
   
-
-  .p_footer{
-    margin-top: 14em;
+  .header_img{
+    max-height: 180px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
   }
-
-  footer{
-    width: 100%;
-    text-align: center;
-    margin-top: 5em;
+  .p_text{
+    font-size: 2em;
+    margin-top: 7%;
+  }
+  
+  .btn-style-01{
+    font-size: 2em;
+  }
+  .p_footer{
+    font-size: 1.4em;
   }
 
   footer p{
-    text-align: center;
-    color:#999999;
+  font-size: 1.1em;
   }
-
-}
-
-
-@media screen and (max-width: 768px) {
-
-  .container{
-    width: 70%;
-    margin-left: 15%;
-    margin-top: 10%;
-    background-color: white;
-    border-radius: 10px;
-  }
-
-
-  .p_text{
-    font-size: 1.4em;
-  }
-  
-
-  .p_footer{
-    margin-top: 14em;
-  }
-
-  footer{
-    width: 100%;
-    text-align: center;
-    margin-top: 5em;
-  }
-
-  footer p{
-    text-align: center;
-    color:#999999;
-  }
-
 }
 
 @media screen and (max-width: 600px) {
+    
+    .header_img{
+      max-height: 170px;
+      background-image: url("../images/英特尔认证头图600.jpg") ;
+      background-repeat: no-repeat;
+    }
+}
 
-  .container{
-    width: 100%;
-    margin-left: 0px;
-    margin-top: 3%;
 
-  }
-  .header_img img{
-    height: 15em;
-  }
-  .container div{
-    margin-left: 5%;
-    margin-right: 5%;
-  }
+@media screen and (max-width: 500px) {
 
+    .container{
+      width:100%;
+    }
+    
+    .header_img{
+      max-height: 120px;
+      background-image: url("../images/英特尔认证头图500.jpg") ;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+
+    .p_text{
+      font-size: 1.8em;
+    }
+    
+    .btn-style-01{
+      font-size: 1.8em;
+      padding:2px 12px;
+    }
+    .p_footer{
+      font-size: 1.5em;
+      line-height: 1.5em;
+      margin-top: 14%;
+
+    }
+
+    footer p{
+      font-size: 1.3em;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    
+    .header_img{
+      max-height: 114px;
+      background-image: url("../images/英特尔认证头图400.jpg") ;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+
+
+    }
+}
+
+@media screen and (max-width: 350px) {
+
+    .header_img{
+      max-height: 110px;
+      background-image: url("../images/英特尔认证头图350.jpg") ;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+
+
+    }
 
   .p_text{
-    font-size: 1.3em;
+    font-size: 1.6em;
   }
   
-
-  .p_footer{
-    margin-top: 10em;
+  .btn-style-01{
+    font-size: 1.6em;
   }
-
-  footer{
-    width: 100%;
-    text-align: center;
-    margin-top: 1em;
+  .p_footer{
+    font-size: 1.3em;
   }
 
   footer p{
-    text-align: center;
-    color:#999999;
+  font-size: 1em;
   }
 
 }
